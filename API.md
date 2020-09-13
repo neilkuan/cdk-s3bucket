@@ -4,11 +4,11 @@
 
 Name|Description
 ----|-----------
-[Bucket](#cdk-s3bucket-bucket)|*No description*
+[Bucket](#cdk-s3bucket-ng-bucket)|*No description*
 
 
 
-## class Bucket  <a id="cdk-s3bucket-bucket"></a>
+## class Bucket  <a id="cdk-s3bucket-ng-bucket"></a>
 
 
 
