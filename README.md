@@ -29,6 +29,13 @@ const bucket = new Bucket(stack, 'Bucket',{
 
 // Get S3 Resource via bucket.s3Bucket ...
 new CfnOutput(stack, 'BucketName', { value: bucket.s3Bucket.bucketName }); 
+```
 
-
+### To deploy
+```bash
+cdk deploy --require-approval never
+```
+### To destroy
+```bash
+cdk destroy -f
 ```
