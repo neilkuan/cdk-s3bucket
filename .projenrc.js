@@ -1,6 +1,6 @@
 const { ConstructLibraryAws } = require('projen');
 
-const PROJECT_NAME = 'cdk-s3bucket';
+const PROJECT_NAME = 'cdk-s3bucket-ng';
 const PROJECT_DESCRIPTION = '';
 
 const project = new ConstructLibraryAws({
@@ -12,7 +12,7 @@ const project = new ConstructLibraryAws({
   keywords: ['aws', 'cdk', 's3'],
   catalog: {
     twitter: 'neil_kuan',
-    announce: true,
+    announce: false,
   },
   projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
   cdkVersion: '1.62.0',
@@ -25,8 +25,8 @@ const project = new ConstructLibraryAws({
     '@aws-cdk/custom-resources',
   ],
   python: {
-    distName: 'cdk-s3bucket',
-    module: 'cdk_s3bucket',
+    distName: 'cdk-s3bucket-ng',
+    module: 'cdk_s3bucket_ng',
   },
 });
 
