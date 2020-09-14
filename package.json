@@ -172,6 +172,6 @@
   },
   "awscdkio": {
     "twitter": "neil_kuan",
-    "announce": false
+    "announce": true
   }
 }

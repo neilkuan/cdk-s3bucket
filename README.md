@@ -2,6 +2,10 @@
 [![PyPI version](https://badge.fury.io/py/cdk-s3bucket-ng.svg)](https://badge.fury.io/py/cdk-s3bucket-ng)
 ![Release](https://github.com/guan840912/cdk-s3bucket/workflows/Release/badge.svg)
 
+![Downloads](https://img.shields.io/badge/-DOWNLOADS:-brightgreen?color=gray)
+![npm](https://img.shields.io/npm/dt/cdk-s3bucket-ng?label=npm&color=orange)
+![PyPI](https://img.shields.io/pypi/dm/cdk-s3bucket-ng?label=pypi&color=blue)
+
 # cdk-s3bucket-ng
 cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.
 
@@ -46,10 +50,10 @@ a.txt  b.txt  c.txt
 ```
 ### To deploy
 ```bash
-cdk deploy --require-approval never
+cdk deploy
 ```
 ### To destroy
 ```bash
 # will delete object in S3 , and delete S3 Bucket
-cdk destroy -f
+cdk destroy
 ```
