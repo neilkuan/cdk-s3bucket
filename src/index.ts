@@ -14,26 +14,9 @@ export class Bucket extends cdk.Construct {
   constructor(scope: cdk.Construct, id: string, props?: s3.BucketProps ) {
     super(scope, id);
 
-    // S3 bucket to host K3s token + kubeconfig file 
-    this.s3Bucket = new s3.Bucket(this, 'Bucket', {
-      accessControl: props?.accessControl ?? undefined,
-      blockPublicAccess: props?.blockPublicAccess ?? undefined,
-      bucketName: props?.bucketName ?? undefined,
-      cors: props?.cors ?? undefined,
-      encryption: props?.encryption ?? undefined,
-      encryptionKey: props?.encryptionKey ?? undefined,
-      inventories: props?.inventories ?? undefined,
-      lifecycleRules: props?.lifecycleRules ?? undefined,
-      metrics: props?.metrics ?? undefined,
-      publicReadAccess: props?.publicReadAccess ?? undefined,
-      removalPolicy: props?.removalPolicy ?? undefined,
-      serverAccessLogsBucket: props?.serverAccessLogsBucket ?? undefined,
-      serverAccessLogsPrefix: props?.serverAccessLogsPrefix ?? undefined,
-      versioned: props?.versioned ?? undefined,
-      websiteErrorDocument: props?.websiteErrorDocument ?? undefined,
-      websiteRedirect: props?.websiteRedirect ?? undefined,
-      websiteRoutingRules: props?.websiteRoutingRules ?? undefined,
-    });
+    let BucketNextGenerationProps = props;
+    // S3 Bucket 
+    this.s3Bucket = new s3.Bucket(this, 'Bucket', BucketNextGenerationProps);
 
     // Delete S3 Object CustomResource
     if(props?.removalPolicy === cdk.RemovalPolicy.DESTROY){

@@ -15,8 +15,11 @@ test('test can delete S3 Bucket have custom resource', () => {
   const stack = new Stack(app, 'testing-stack-delete');
   new Bucket(stack, 'Bucket',{
     removalPolicy: RemovalPolicy.DESTROY,
+    bucketName: 'neil2020',
   });
-  expect(stack).toHaveResource('AWS::S3::Bucket')
+  expect(stack).toHaveResource('AWS::S3::Bucket',{
+    BucketName: 'neil2020',
+  })
   expect(stack).toHaveResource('AWS::CloudFormation::CustomResource',{
     Bucket: {
       Ref: 'BucketD7FEB781',
