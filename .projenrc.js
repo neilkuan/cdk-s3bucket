@@ -14,7 +14,7 @@ const project = new ConstructLibraryAws({
     twitter: 'neil_kuan',
     announce: true,
   },
-  projenUpgradeSecret: 'PROJEN_GITHUB_TOKEN',
+  projenUpgradeSecret: 'AUTOMATION_GITHUB_TOKEN',
   cdkVersion: '1.64.1',
   cdkDependencies: [
     '@aws-cdk/aws-iam',
@@ -27,6 +27,23 @@ const project = new ConstructLibraryAws({
   python: {
     distName: 'cdk-s3bucket-ng',
     module: 'cdk_s3bucket_ng',
+  },
+});
+
+project.mergify.addRule({
+  name: 'Merge approved pull requests with auto-merge label if CI passes',
+  conditions: [
+    '#approved-reviews-by>=1',
+    'status-success=build',
+    'label=auto-merge',
+    'label!=do-not-merge',
+    'label!=work-in-progress',
+  ],
+  actions: {
+    merge: {
+      method: 'merge',
+      commit_message: 'title+body',
+    },
   },
 });
 
