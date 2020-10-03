@@ -1,5 +1,5 @@
 import { App, Stack, CfnOutput, RemovalPolicy }  from '@aws-cdk/core';
-import { Bucket } from './';
+import { BucketNg } from './';
 
 const app = new App();
 const env = {
@@ -7,8 +7,8 @@ const env = {
   account: process.env.CDK_DEFAULT_ACCOUNT,
 };
 const stack = new Stack(app, 'testing-stack', { env });
-const bucket = new Bucket(stack, 'Bucket',{
+const bucket = new BucketNg(stack, 'Bucket',{
   removalPolicy: RemovalPolicy.DESTROY,
   bucketName: 'neil2020',
 });
-new CfnOutput(stack, 'BucketName', { value: bucket.s3Bucket.bucketName }); 
+new CfnOutput(stack, 'BucketName', { value: bucket.bucketName }); 

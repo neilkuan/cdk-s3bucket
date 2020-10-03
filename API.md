@@ -4,16 +4,16 @@
 
 Name|Description
 ----|-----------
-[Bucket](#cdk-s3bucket-ng-bucket)|*No description*
+[BucketNg](#cdk-s3bucket-ng-bucketng)|cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.
 
 
 
-## class Bucket  <a id="cdk-s3bucket-ng-bucket"></a>
+## class BucketNg  <a id="cdk-s3bucket-ng-bucketng"></a>
 
+cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.
 
-
-__Implements__: [IConstruct](#constructs-iconstruct), [IConstruct](#aws-cdk-core-iconstruct), [IConstruct](#constructs-iconstruct), [IDependable](#aws-cdk-core-idependable)
-__Extends__: [Construct](#aws-cdk-core-construct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IConstruct](#aws-cdk-core-iconstruct), [IConstruct](#constructs-iconstruct), [IDependable](#aws-cdk-core-idependable), [IResource](#aws-cdk-core-iresource), [IConstruct](#constructs-iconstruct), [IDependable](#aws-cdk-core-idependable), [IConstruct](#aws-cdk-core-iconstruct), [IBucket](#aws-cdk-aws-s3-ibucket), [IConstruct](#constructs-iconstruct), [IDependable](#aws-cdk-core-idependable), [IConstruct](#aws-cdk-core-iconstruct), [IResource](#aws-cdk-core-iresource)
+__Extends__: [Bucket](#aws-cdk-aws-s3-bucket)
 
 ### Initializer
 
@@ -21,7 +21,7 @@ __Extends__: [Construct](#aws-cdk-core-construct)
 
 
 ```ts
-new Bucket(scope: Construct, id: string, props?: BucketProps)
+new BucketNg(scope: Construct, id: string, props?: BucketProps)
 ```
 
 * **scope** (<code>[Construct](#aws-cdk-core-construct)</code>)  *No description*
@@ -46,14 +46,6 @@ new Bucket(scope: Construct, id: string, props?: BucketProps)
   * **websiteRedirect** (<code>[RedirectTarget](#aws-cdk-aws-s3-redirecttarget)</code>)  Specifies the redirect behavior of all requests to a website endpoint of a bucket. __*Default*__: No redirection.
   * **websiteRoutingRules** (<code>Array<[RoutingRule](#aws-cdk-aws-s3-routingrule)></code>)  Rules that define when a redirect is applied and the redirect behavior. __*Default*__: No redirection rules.
 
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**s3Bucket** | <code>[IBucket](#aws-cdk-aws-s3-ibucket)</code> | reture S3 bucket self.
 
 
 

@@ -24,21 +24,21 @@ You never have to delete objects yourself, and the usage is almost the same as t
 
 ```ts
 import { App, Stack, CfnOutput, RemovalPolicy }  from '@aws-cdk/core';
-import { Bucket } from 'cdk-s3bucket-ng';
+import { BucketNg } from 'cdk-s3bucket-ng';
 import * as s3deploy from '@aws-cdk/aws-s3-deployment';
 
 // Create a S3 , add props "removalPolicy: RemovalPolicy.DESTROY".
-const bucket = new Bucket(stack, 'Bucket',{
+const bucket = new BucketNg(stack, 'Bucket',{
   removalPolicy: RemovalPolicy.DESTROY,
 });
 
 //Upload temp file .
 new s3deploy.BucketDeployment(stack, 'addResource', {
     sources: [s3deploy.Source.asset('./testdir')],
-    destinationBucket: bucket.s3Bucket,
+    destinationBucket: bucket,
   });
 // Get S3 Resource via bucket.s3Bucket ...
-new CfnOutput(stack, 'BucketName', { value: bucket.s3Bucket.bucketName }); 
+new CfnOutput(stack, 'BucketName', { value: bucket.bucketName }); 
 ```
 
 ```bash
