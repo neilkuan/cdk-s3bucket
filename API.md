@@ -8,7 +8,7 @@ Name|Description
 
 
 
-## class BucketNg  <a id="cdk-s3bucket-ng-bucketng"></a>
+## class BucketNg 🔹 <a id="cdk-s3bucket-ng-bucketng"></a>
 
 cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.
 
