@@ -137,7 +137,7 @@
       "category": 2
     }
   },
-  "version": "0.0.14",
+  "version": "0.0.13",
   "types": "lib/index.d.ts",
   "jest": {
     "clearMocks": true,
@@ -159,7 +159,7 @@
       }
     }
   },
-  "stability": "stable",
+  "stability": "experimental",
   "jsii": {
     "outdir": "dist",
     "targets": {

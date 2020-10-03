@@ -15,6 +15,8 @@ const project = new ConstructLibraryAws({
     announce: false,
   },
   projenUpgradeSecret: 'AUTOMATION_GITHUB_TOKEN',
+  stability: 'experimental',
+  autoReleaseSchedule: 'never',
   cdkVersion: '1.66.0',
   cdkDependencies: [
     '@aws-cdk/aws-iam',
@@ -47,14 +49,8 @@ project.mergify.addRule({
   },
 });
 
+const common_exclude = ['cdk.out', 'cdk.context.json', 'image', 'yarn-error.log','coverage'];
+project.gitignore.exclude(...common_exclude);
 
-project.gitignore.exclude('cdk.context.json', 'cdk.out');
-
-project.npmignore.exclude(
-  'cdk.context.json',
-  'cdk.out',
-  'coverage',
-  'yarn-error.log',
-  'image',
-);
+project.npmignore.exclude(...common_exclude);
 project.synth();
