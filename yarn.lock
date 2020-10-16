@@ -1637,9 +1637,9 @@ concat-stream@^2.0.0:
     typedarray "^0.0.6"
 
 constructs@^3.0.4:
-  version "3.0.20"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.0.20.tgz#0e976948be46987e8a4e788ba1499980bde8a939"
-  integrity sha512-SyuuV8e//om1Kik117RTcnmdwF0r6shDONPkwfCpDvwH0q3J97lAZKSsPZXYB5DFDu8GyCO31WXjN5r/GlSQVQ==
+  version "3.0.21"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-3.0.21.tgz#b4e588634f85bdc212e1b1103a16320e3c43ddbe"
+  integrity sha512-JdKQWo9KESqi4P3xlQyc3ivDxkVFkz0G0BK+NkULk/VWcjmDou66OkSQZWg1KgxSgJO+5dxcdButQeOjllfxvA==
 
 contains-path@^0.1.0:
   version "0.1.0"
@@ -6334,9 +6334,9 @@ y18n@^4.0.0:
   integrity sha512-r9S/ZyXu/Xu9q1tYlpsLIsa3EeLXXk0VwlxqTcFRfg9EhMW+17kbt9G0NrgCmhGb5vT2hyhJZLfDGx+7+5Uj/w==
 
 y18n@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-5.0.2.tgz#48218df5da2731b4403115c39a1af709c873f829"
-  integrity sha512-CkwaeZw6dQgqgPGeTWKMXCRmMcBgETFlTml1+ZOO+q7kGst8NREJ+eWwFNPVUQ4QGdAaklbqCZHH6Zuep1RjiA==
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-5.0.3.tgz#978115b82befe2b5c762bf55980b7b01a4a2d5d9"
+  integrity sha512-JeFbcHQ/7hVmMBXW6UB6Tg7apStHd/ztGz1JN78y3pFi/q0Ht1eA6PVkvw56gm7UA8fcJR/ziRlYEDMGoju0yQ==
 
 yaml@^1.10.0:
   version "1.10.0"
