@@ -10,6 +10,7 @@ const project = new AwsCdkConstructLibrary({
   authorName: 'Neil Kuan',
   authorEmail: 'guan840912@gmail.com',
   keywords: ['aws', 'cdk', 's3'],
+  dependabot: false,
   catalog: {
     twitter: 'neil_kuan',
     announce: false,
