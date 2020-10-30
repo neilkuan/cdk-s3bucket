@@ -18,7 +18,8 @@ const project = new AwsCdkConstructLibrary({
   projenUpgradeSecret: 'AUTOMATION_GITHUB_TOKEN',
   stability: 'experimental',
   autoReleaseSchedule: 'never',
-  cdkVersion: '1.69.0',
+  cdkVersion: '1.71.0',
+  compat: true,
   cdkDependencies: [
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-s3',
