@@ -57,3 +57,6 @@ cdk deploy
 # will delete object in S3 , and delete S3 Bucket
 cdk destroy
 ```
+
+## :clap:  Supporters
+[![Stargazers repo roster for @guan840912/cdk-s3bucket](https://reporoster.com/stars/guan840912/cdk-s3bucket)](https://github.com/guan840912/cdk-s3bucket/stargazers)

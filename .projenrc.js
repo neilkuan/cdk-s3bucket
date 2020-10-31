@@ -3,6 +3,8 @@ const { AwsCdkConstructLibrary, GithubWorkflow } = require('projen');
 const PROJECT_NAME = 'cdk-s3bucket-ng';
 const PROJECT_DESCRIPTION = 'cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.';
 const AUTOMATION_TOKEN = 'AUTOMATION_GITHUB_TOKEN';
+const CDK_VERSION = '1.71.0';
+
 const project = new AwsCdkConstructLibrary({
   name: PROJECT_NAME,
   description: PROJECT_DESCRIPTION,
@@ -18,15 +20,23 @@ const project = new AwsCdkConstructLibrary({
   projenUpgradeSecret: 'AUTOMATION_GITHUB_TOKEN',
   stability: 'experimental',
   autoReleaseSchedule: 'never',
-  cdkVersion: '1.71.0',
+  cdkVersion: CDK_VERSION,
   compat: true,
-  cdkDependencies: [
-    '@aws-cdk/aws-iam',
-    '@aws-cdk/aws-s3',
-    '@aws-cdk/aws-lambda',
-    '@aws-cdk/aws-logs',
-    '@aws-cdk/core',
-    '@aws-cdk/custom-resources',
+  deps: [
+    `@aws-cdk/aws-iam@^${CDK_VERSION}`,
+    `@aws-cdk/aws-s3@^${CDK_VERSION}`,
+    `@aws-cdk/aws-lambda@^${CDK_VERSION}`,
+    `@aws-cdk/aws-logs@^${CDK_VERSION}`,
+    `@aws-cdk/core@^${CDK_VERSION}`,
+    `@aws-cdk/custom-resources@^${CDK_VERSION}`,
+  ],
+  peerDeps: [
+    `@aws-cdk/aws-iam@^${CDK_VERSION}`,
+    `@aws-cdk/aws-s3@^${CDK_VERSION}`,
+    `@aws-cdk/aws-lambda@^${CDK_VERSION}`,
+    `@aws-cdk/aws-logs@^${CDK_VERSION}`,
+    `@aws-cdk/core@^${CDK_VERSION}`,
+    `@aws-cdk/custom-resources@^${CDK_VERSION}`,
   ],
   python: {
     distName: 'cdk-s3bucket-ng',
