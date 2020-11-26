@@ -3,7 +3,7 @@ const { AwsCdkConstructLibrary, GithubWorkflow } = require('projen');
 const PROJECT_NAME = 'cdk-s3bucket-ng';
 const PROJECT_DESCRIPTION = 'cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.';
 const AUTOMATION_TOKEN = 'AUTOMATION_GITHUB_TOKEN';
-const CDK_VERSION = '1.74.0';
+const CDK_VERSION = '1.75.0';
 
 const project = new AwsCdkConstructLibrary({
   name: PROJECT_NAME,
@@ -37,7 +37,7 @@ const project = new AwsCdkConstructLibrary({
 });
 
 // create a custom projen and yarn upgrade workflow
-const workflow = new GithubWorkflow(project, 'ProjenYarnUpgrade');
+workflow = project.github.addWorkflow('ProjenYarnUpgrade');
 
 workflow.on({
   schedule: [{
