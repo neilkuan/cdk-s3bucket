@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.0.52 (2020-12-24)
+
+
+### Bug Fixes
+
+* **projen:** fix projen config & update readme ([8e1b29d](https://github.com/guan840912/cdk-s3bucket/commit/8e1b29d17117a97c59b2d169dfeb9af93762a3f4))
+* **projen:** fix projen config & update readme ([56e8323](https://github.com/guan840912/cdk-s3bucket/commit/56e8323cf168227f93652b4f3043f3774a55e315))
+
 ### 1.0.51 (2020-12-23)
 
 
