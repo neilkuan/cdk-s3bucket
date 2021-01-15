@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.62](https://github.com/guan840912/cdk-s3bucket/compare/v1.0.61...v1.0.62) (2021-01-15)
+
 ### [1.0.61](https://github.com/guan840912/cdk-s3bucket/compare/v1.0.60...v1.0.61) (2021-01-14)
 
 ### [1.0.60](https://github.com/guan840912/cdk-s3bucket/compare/v1.0.59...v1.0.60) (2021-01-01)
