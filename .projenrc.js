@@ -17,6 +17,7 @@ const project = new AwsCdkConstructLibrary({
     twitter: 'neil_kuan',
     announce: false,
   },
+  defaultReleaseBranch: 'master',
   projenUpgradeSecret: 'AUTOMATION_GITHUB_TOKEN',
   stability: 'experimental',
   autoReleaseSchedule: 'never',
