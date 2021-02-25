@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@aws-cdk/assert",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "build"
     },
     {
@@ -16,12 +16,10 @@
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
-      "version": "^4.3.0",
       "type": "build"
     },
     {
       "name": "@typescript-eslint/parser",
-      "version": "^4.3.0",
       "type": "build"
     },
     {
@@ -71,12 +69,12 @@
     },
     {
       "name": "projen",
-      "version": "^0.16.1",
+      "version": "^0.16.15",
       "type": "build"
     },
     {
       "name": "standard-version",
-      "version": "^9.0.0",
+      "version": "^9",
       "type": "build"
     },
     {
@@ -85,37 +83,36 @@
     },
     {
       "name": "typescript",
-      "version": "^3.9.5",
       "type": "build"
     },
     {
       "name": "@aws-cdk/aws-iam",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/aws-lambda",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/aws-logs",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/aws-s3",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/custom-resources",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "peer"
     },
     {
@@ -125,32 +122,32 @@
     },
     {
       "name": "@aws-cdk/aws-iam",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-lambda",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-logs",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-s3",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/custom-resources",
-      "version": "^1.85.0",
+      "version": "^1.91.0",
       "type": "runtime"
     }
   ],
