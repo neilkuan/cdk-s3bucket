@@ -1,6 +1,6 @@
 [![NPM version](https://badge.fury.io/js/cdk-s3bucket-ng.svg)](https://badge.fury.io/js/cdk-s3bucket-ng)
 [![PyPI version](https://badge.fury.io/py/cdk-s3bucket-ng.svg)](https://badge.fury.io/py/cdk-s3bucket-ng)
-![Release](https://github.com/guan840912/cdk-s3bucket/workflows/Release/badge.svg)
+![Release](https://github.com/neilkuan/cdk-s3bucket/workflows/Release/badge.svg)
 
 ![Downloads](https://img.shields.io/badge/-DOWNLOADS:-brightgreen?color=gray)
 ![npm](https://img.shields.io/npm/dt/cdk-s3bucket-ng?label=npm&color=orange)
@@ -59,4 +59,4 @@ cdk destroy
 ```
 
 ## :clap:  Supporters
-[![Stargazers repo roster for @guan840912/cdk-s3bucket](https://reporoster.com/stars/guan840912/cdk-s3bucket)](https://github.com/guan840912/cdk-s3bucket/stargazers)
+[![Stargazers repo roster for @neilkuan/cdk-s3bucket](https://reporoster.com/stars/neilkuan/cdk-s3bucket)](https://github.com/neilkuan/cdk-s3bucket/stargazers)

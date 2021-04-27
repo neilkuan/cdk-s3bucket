@@ -9,7 +9,7 @@ const CDK_VERSION = '1.96.0';
 const project = new AwsCdkConstructLibrary({
   name: PROJECT_NAME,
   description: PROJECT_DESCRIPTION,
-  repository: 'https://github.com/guan840912/cdk-s3bucket.git',
+  repository: 'https://github.com/neilkuan/cdk-s3bucket.git',
   authorName: 'Neil Kuan',
   authorEmail: 'guan840912@gmail.com',
   keywords: ['aws', 'cdk', 's3'],

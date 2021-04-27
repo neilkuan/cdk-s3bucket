@@ -3,7 +3,7 @@
   "description": "cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/guan840912/cdk-s3bucket.git"
+    "url": "https://github.com/neilkuan/cdk-s3bucket.git"
   },
   "scripts": {
     "clobber": "npx projen clobber",
