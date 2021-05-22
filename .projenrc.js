@@ -1,10 +1,9 @@
 const { AwsCdkConstructLibrary } = require('projen');
-const { Automation } = require('projen-automate-it');
 
 const PROJECT_NAME = 'cdk-s3bucket-ng';
 const PROJECT_DESCRIPTION = 'cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.';
 const AUTOMATION_TOKEN = 'AUTOMATION_GITHUB_TOKEN';
-const CDK_VERSION = '1.96.0';
+const CDK_VERSION = '1.105.0';
 
 const project = new AwsCdkConstructLibrary({
   name: PROJECT_NAME,
@@ -38,12 +37,6 @@ const project = new AwsCdkConstructLibrary({
   },
   rebuildBot: false,
 });
-
-const automation = new Automation(project, {
-  automationToken: AUTOMATION_TOKEN,
-});
-
-automation.projenYarnUpgrade();
 
 const common_exclude = ['cdk.out', 'cdk.context.json', 'image', 'yarn-error.log', 'coverage'];
 project.gitignore.exclude(...common_exclude);
