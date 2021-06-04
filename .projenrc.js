@@ -14,7 +14,7 @@ const project = new AwsCdkConstructLibrary({
   dependabot: false,
   catalog: {
     twitter: 'neil_kuan',
-    announce: true,
+    announce: false,
   },
   defaultReleaseBranch: 'master',
   stability: 'experimental',
@@ -31,8 +31,6 @@ const project = new AwsCdkConstructLibrary({
   autoApproveOptions: {
     secret: 'PROJEN_GITHUB_TOKEN',
   },
-  deps: ['projen-automate-it'],
-  bundledDeps: ['projen-automate-it'],
   python: {
     distName: 'cdk-s3bucket-ng',
     module: 'cdk_s3bucket_ng',
