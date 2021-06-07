@@ -1,4 +1,4 @@
-const { AwsCdkConstructLibrary } = require('projen');
+const { AwsCdkConstructLibrary, DependenciesUpgradeMechanism } = require('projen');
 
 const PROJECT_NAME = 'cdk-s3bucket-ng';
 const PROJECT_DESCRIPTION = 'cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.';
@@ -11,7 +11,6 @@ const project = new AwsCdkConstructLibrary({
   authorName: 'Neil Kuan',
   authorEmail: 'guan840912@gmail.com',
   keywords: ['aws', 'cdk', 's3'],
-  dependabot: false,
   catalog: {
     twitter: 'neil_kuan',
     announce: false,
@@ -28,8 +27,16 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/core',
     '@aws-cdk/custom-resources',
   ],
+  autoDetectBin: false,
+  depsUpgrade: DependenciesUpgradeMechanism.githubWorkflow({
+    workflowOptions: {
+      labels: ['auto-approve'],
+      secret: 'AUTOMATION_GITHUB_TOKEN',
+    },
+  }),
   autoApproveOptions: {
-    secret: 'PROJEN_GITHUB_TOKEN',
+    secret: 'GITHUB_TOKEN',
+    allowedUsernames: ['pahud'],
   },
   python: {
     distName: 'cdk-s3bucket-ng',
