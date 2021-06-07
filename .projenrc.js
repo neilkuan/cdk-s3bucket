@@ -36,7 +36,7 @@ const project = new AwsCdkConstructLibrary({
   }),
   autoApproveOptions: {
     secret: 'GITHUB_TOKEN',
-    allowedUsernames: ['pahud'],
+    allowedUsernames: ['neilkuan'],
   },
   python: {
     distName: 'cdk-s3bucket-ng',
