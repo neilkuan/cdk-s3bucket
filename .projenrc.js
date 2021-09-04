@@ -2,7 +2,7 @@ const { AwsCdkConstructLibrary, DependenciesUpgradeMechanism } = require('projen
 
 const PROJECT_NAME = 'cdk-s3bucket-ng';
 const PROJECT_DESCRIPTION = 'cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.';
-const CDK_VERSION = '1.105.0';
+const CDK_VERSION = '1.121.0';
 
 const project = new AwsCdkConstructLibrary({
   name: PROJECT_NAME,
@@ -19,6 +19,7 @@ const project = new AwsCdkConstructLibrary({
   stability: 'experimental',
   cdkVersion: CDK_VERSION,
   compat: false,
+  minNodeVersion: '12.19.0',
   cdkDependencies: [
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-s3',
