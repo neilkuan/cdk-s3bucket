@@ -39,7 +39,7 @@ const project = new AwsCdkConstructLibrary({
     secret: 'GITHUB_TOKEN',
     allowedUsernames: ['neilkuan'],
   },
-  python: {
+  publishToPypi: {
     distName: 'cdk-s3bucket-ng',
     module: 'cdk_s3bucket_ng',
   },
