@@ -1,10 +1,10 @@
-const { AwsCdkConstructLibrary } = require('projen');
+const { awscdk } = require('projen');
 
 const PROJECT_NAME = 'cdk-s3bucket-ng';
 const PROJECT_DESCRIPTION = 'cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.';
-const CDK_VERSION = '1.122.0';
+const CDK_VERSION = '1.134.0';
 
-const project = new AwsCdkConstructLibrary({
+const project = new awscdk.AwsCdkConstructLibrary({
   name: PROJECT_NAME,
   description: PROJECT_DESCRIPTION,
   repository: 'https://github.com/neilkuan/cdk-s3bucket.git',
