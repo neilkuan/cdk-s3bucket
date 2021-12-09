@@ -28,9 +28,9 @@ You never have to delete objects yourself, and the usage is almost the same as t
 # Sample
 
 ```ts
-import { App, Stack, CfnOutput, RemovalPolicy }  from '@aws-cdk/core';
+import { App, Stack, CfnOutput, RemovalPolicy }  from 'aws-cdk-lib';
 import { BucketNg } from 'cdk-s3bucket-ng';
-import * as s3deploy from '@aws-cdk/aws-s3-deployment';
+import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
 
 // Create a S3 , add props "removalPolicy: RemovalPolicy.DESTROY".
 const bucket = new BucketNg(stack, 'Bucket',{
