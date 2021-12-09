@@ -1,20 +1,20 @@
-import { App, Stack, RemovalPolicy } from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
 import { BucketNg } from '../src/index';
 import '@aws-cdk/assert/jest';
 
 
 test('test create S3 Bucket', () => {
-  const app = new App();
-  const stack = new Stack(app, 'testing-stack');
+  const app = new cdk.App();
+  const stack = new cdk.Stack(app, 'testing-stack');
   new BucketNg(stack, 'Bucket');
   expect(stack).toHaveResource('AWS::S3::Bucket');
 });
 
 test('test can delete S3 Bucket have custom resource', () => {
-  const app = new App();
-  const stack = new Stack(app, 'testing-stack-delete');
+  const app = new cdk.App();
+  const stack = new cdk.Stack(app, 'testing-stack-delete');
   new BucketNg(stack, 'Bucket', {
-    removalPolicy: RemovalPolicy.DESTROY,
+    removalPolicy: cdk.RemovalPolicy.DESTROY,
     bucketName: 'neil2020',
   });
   expect(stack).toHaveResource('AWS::S3::Bucket', {
@@ -28,10 +28,10 @@ test('test can delete S3 Bucket have custom resource', () => {
 });
 
 test('test can delete S3 Bucket not have custom resource', () => {
-  const app = new App();
-  const stack = new Stack(app, 'testing-stack-no-delete');
+  const app = new cdk.App();
+  const stack = new cdk.Stack(app, 'testing-stack-no-delete');
   new BucketNg(stack, 'Bucket', {
-    removalPolicy: RemovalPolicy.RETAIN,
+    removalPolicy: cdk.RemovalPolicy.RETAIN,
     bucketName: 'neil2020',
   });
   expect(stack).toHaveResource('AWS::S3::Bucket', {

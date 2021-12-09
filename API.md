@@ -16,7 +16,7 @@ new BucketNg(scope: Construct, id: string, props?: BucketProps)
 
 ##### `scope`<sup>Required</sup> <a name="cdk-s3bucket-ng.BucketNg.parameter.scope"></a>
 
-- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
+- *Type:* [`constructs.Construct`](#constructs.Construct)
 
 ---
 
@@ -28,7 +28,7 @@ new BucketNg(scope: Construct, id: string, props?: BucketProps)
 
 ##### `props`<sup>Optional</sup> <a name="cdk-s3bucket-ng.BucketNg.parameter.props"></a>
 
-- *Type:* [`@aws-cdk/aws-s3.BucketProps`](#@aws-cdk/aws-s3.BucketProps)
+- *Type:* [`aws-cdk-lib.aws_s3.BucketProps`](#aws-cdk-lib.aws_s3.BucketProps)
 
 ---
 

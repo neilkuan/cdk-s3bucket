@@ -1,14 +1,14 @@
-import { App, Stack, CfnOutput, RemovalPolicy } from '@aws-cdk/core';
+import * as cdk from 'aws-cdk-lib';
 import { BucketNg } from './';
 
-const app = new App();
+const app = new cdk.App();
 const env = {
   region: process.env.CDK_DEFAULT_REGION,
   account: process.env.CDK_DEFAULT_ACCOUNT,
 };
-const stack = new Stack(app, 'testing-stack', { env });
+const stack = new cdk.Stack(app, 'testing-stack', { env });
 const bucket = new BucketNg(stack, 'Bucket', {
-  removalPolicy: RemovalPolicy.DESTROY,
+  removalPolicy: cdk.RemovalPolicy.DESTROY,
   bucketName: 'neil2020',
 });
-new CfnOutput(stack, 'BucketName', { value: bucket.bucketName });
+new cdk.CfnOutput(stack, 'BucketName', { value: bucket.bucketName });
