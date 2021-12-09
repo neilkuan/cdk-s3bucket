@@ -42,6 +42,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     module: 'cdk_s3bucket_ng',
   },
   rebuildBot: false,
+  workflowNodeVersion: '14.15.0',
 });
 
 project.package.addField('resolutions', {
