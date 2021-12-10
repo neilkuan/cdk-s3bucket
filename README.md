@@ -9,10 +9,20 @@
 # cdk-s3bucket-ng
 cdk-s3bucket-ng is an AWS CDK construct library that provides a drop-in replacement for the Bucket construct with the capability to remove non-empty S3 buckets.
 
-## !!! Usage Note !!! 
-cdk-s3bucket-ng before `version: 1.1.244`, support aws-cdk `version: 1.xxx.xxx`.
+## Install
+```bash
+Use the npm dist tag to opt in CDKv1 or CDKv2:
 
-cdk-s3bucket-ng start at `version: 2.x.x`, support aws-cdk `version: 2.xxx.xxx`.
+// for CDKv2
+npm install cdk-s3bucket-ng
+or
+npm install cdk-s3bucket-ng@latest
+
+// for CDKv1
+npm install cdk-s3bucket-ng@cdkv1 
+```
+
+💡💡💡 please click [here](https://github.com/neilkuan/cdk-s3bucket-ng/tree/cdkv1#readme), if you are using aws-cdk v1.x.x version.💡💡💡
 
 # Why
 
