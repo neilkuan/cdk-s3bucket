@@ -22,7 +22,7 @@ npm install cdk-s3bucket-ng@latest
 npm install cdk-s3bucket-ng@cdkv1 
 ```
 
-💡💡💡 please click [here](https://github.com/neilkuan/cdk-s3bucket-ng/tree/cdkv1#readme), if you are using aws-cdk v1.x.x version.💡💡💡
+💡💡💡 please click [here](https://github.com/neilkuan/cdk-s3bucket/tree/cdkv1#readme), if you are using aws-cdk v1.x.x version.💡💡💡
 
 # Why
 
