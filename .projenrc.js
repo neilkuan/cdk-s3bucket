@@ -16,7 +16,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   defaultReleaseBranch: 'master',
   stability: 'experimental',
-  cdkVersion: '2.1.0',
+  cdkVersion: '1.134.0',
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */
@@ -47,6 +47,19 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   rebuildBot: false,
   workflowNodeVersion: '^14.17.0',
+  deps: [
+    '@aws-cdk/aws-s3@^1.134.0',
+    '@aws-cdk/custom-resources@^1.134.0',
+    '@aws-cdk/aws-lambda@^1.134.0',
+    '@aws-cdk/aws-logs@^1.134.0',
+    '@aws-cdk/core@^1.134.0',
+    '@aws-cdk/assertions@^1.134.0',
+    'constructs',
+  ],
+  peerDeps: [
+    '@aws-cdk/core@^1.134.0',
+    '@aws-cdk/aws-s3@^1.134.0',
+  ],
 });
 
 project.package.addField('resolutions', {
