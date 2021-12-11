@@ -42,7 +42,7 @@
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.3",
-    "jest": "^27.4.3",
+    "jest": "^27.4.4",
     "jest-junit": "^13",
     "jsii": "^1.47.0",
     "jsii-diff": "^1.47.0",
@@ -67,7 +67,7 @@
     "@aws-cdk/aws-s3": "^1.134.0",
     "@aws-cdk/core": "^1.134.0",
     "@aws-cdk/custom-resources": "^1.134.0",
-    "constructs": "^3.3.163"
+    "constructs": "^3.3.165"
   },
   "bundledDependencies": [],
   "keywords": [
