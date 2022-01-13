@@ -14,7 +14,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     twitter: 'neil_kuan',
     announce: false,
   },
-  defaultReleaseBranch: 'master',
   stability: 'experimental',
   cdkVersion: '2.1.0',
   /**
