@@ -14,7 +14,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     twitter: 'neil_kuan',
     announce: false,
   },
-  defaultReleaseBranch: 'master',
   stability: 'experimental',
   cdkVersion: '1.134.0',
   /**
@@ -34,7 +33,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     ignoreProjen: false,
     workflowOptions: {
       labels: ['auto-approve'],
-      secret: 'AUTOMATION_GITHUB_TOKEN',
     },
   },
   autoApproveOptions: {
