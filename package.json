@@ -71,7 +71,7 @@
     "@aws-cdk/aws-s3": "^1.134.0",
     "@aws-cdk/core": "^1.134.0",
     "@aws-cdk/custom-resources": "^1.134.0",
-    "constructs": "^3.3.195"
+    "constructs": "^3.3.196"
   },
   "keywords": [
     "aws",
