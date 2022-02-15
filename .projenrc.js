@@ -15,7 +15,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     announce: false,
   },
   stability: 'experimental',
-  cdkVersion: '2.1.0',
+  cdkVersion: '2.12.0',
   /**
    * we default release the main branch(cdkv2) with major version 2.
    */
@@ -30,7 +30,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   compat: false,
   autoDetectBin: false,
   depsUpgradeOptions: {
-    ignoreProjen: true,
+    ignoreProjen: false,
     workflowOptions: {
       labels: ['auto-approve'],
     },
