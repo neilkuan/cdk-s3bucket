@@ -45,10 +45,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   rebuildBot: false,
   workflowNodeVersion: '^14.17.0',
+  typescriptVersion: '3.9.10',
 });
 
 project.package.addField('resolutions', {
   'trim-newlines': '3.0.1',
+  'got': '12.3.0',
 });
 
 const common_exclude = ['cdk.out', 'cdk.context.json', 'image', 'yarn-error.log', 'coverage'];
